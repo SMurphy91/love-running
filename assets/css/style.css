@@ -240,7 +240,8 @@ footer {
     color: #3a3a3a;
 }
 
-/* gallery styling */
+/* gallery */
+
 #photos {
     clear: both;
     line-height: 0;
@@ -249,21 +250,22 @@ footer {
 }
 
 #photos>img {
-
     width: 100%;
 }
 
-/* media quiries  for 1200px*/
-@media screen and (max-width:1200px) {
+/* Media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
-        height: 1200px margin: 0 auto;
+        height: 1200px;
+        margin: 0 auto;
     }
 
     #welcome {
-        padding: 30px o;
+        padding: 30px 0;
         margin: 0;
-
     }
 
     #left-about,
@@ -292,8 +294,9 @@ footer {
     }
 }
 
-/* media quiries  for 950px*/
-@media screen and (max-width:950) {
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
     #menu {
         clear: left;
         float: left;
@@ -312,20 +315,27 @@ footer {
         margin: 0 auto;
     }
 
-    #left-about-heading,
-    #right-about-heading {
+    .left-about-heading,
+    .right-about-heading {
         width: inherit;
     }
 
-    #left-about-heading h2,
-    #right-about-heading h2 {
+    .left-about-heading h2,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-    #left-about-heading p,
-    #right-about-heading p {
+    .left-about-heading p,
+    .right-about-heading p {
         text-align: center;
         padding: 0 20px;
+    }
+}
+
+/* For small screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
     }
 }
